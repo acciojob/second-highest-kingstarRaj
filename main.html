@@ -15,7 +15,7 @@
   }
 	var n = arr.length;
 	
-	var largest = -Infinity;
+	var largest = arr[0];
 	var secondlarge = -Infinity;
 
 	for(var i = 0 ; i < n ; i++){
@@ -29,7 +29,7 @@
 		}
 	}
 
-    if (secondMax === -Infinity) {
+    if (secondlarge === -Infinity) {
     return -Infinity;
   }
 
