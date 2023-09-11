@@ -10,12 +10,12 @@
 	<script>
 		function secondHighest(arr) {
 
-			 if (arr.length < 2) {
+	if (arr.length < 2) {
     return -Infinity;
   }
 	var n = arr.length;
 	
-	var largest = arr[0];
+	var largest = -Infinity;
 	var secondlarge = -Infinity;
 
 	for(var i = 0 ; i < n ; i++){
@@ -28,6 +28,10 @@
 			secondlarge = currentele;
 		}
 	}
+
+    if (secondMax === -Infinity) {
+    return -Infinity;
+  }
 
 	return secondlarge;
 }
